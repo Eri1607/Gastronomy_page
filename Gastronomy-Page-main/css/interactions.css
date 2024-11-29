@@ -1,0 +1,266 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400;500;600&display=swap');
+
+/*Off Canvas*/
+
+.sideBar button:focus{
+    outline: none !important;
+    border: none !important;
+}
+
+.imgButton{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+}
+
+
+.imgCard{   
+    border-radius: 20px;
+    padding: 10px ;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.imgCard img{
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+.descriptionCard h2{
+    font-size: 1.1rem;
+}
+
+/*Categorias*/
+.offcanvas-title{
+    color: #00324d;
+}
+.dropdown ul {
+    list-style: none;
+    color:#00324d
+}
+.dropdown ul li a{
+    margin-top: 10px;
+    font-weight: 500;
+}
+#selected{
+    border-right: 5px solid #39a300 ;
+}
+.categories{
+    display: flex;
+    align-items:center;
+    justify-content: space-between;
+    gap: 200px;
+}
+
+.categoria{
+    display: flex;
+    gap: 5px;
+    align-items: center;
+    border-radius: 50px;
+}
+
+.imgCategoria{
+    background-color: #39a300;
+    padding: 20px;
+    border-radius: 50px;
+}
+.imgCategoria img{
+    width: 35px;
+}
+
+.textCategoria h2{
+    color: #00324d;
+    font-family: 'Work Sans', sans-serif;
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+.textCategoria span{
+    font-family: 'Work Sans', sans-serif;
+    color: #ced4da;
+    font-weight: bold;
+}
+
+.categories .dropdown{
+    border: solid 2px #39a300;
+    border-radius: 16px;
+}
+
+.categories .dropdown .dropi{
+    color: #39a300;
+    font-weight: 500;
+}
+
+.categories .dropdown .dropi:focus{
+    border: none !important;
+    color: #39a300;
+}
+
+.categories .dropdown .dropi:hover{
+    outline: none !important;
+    border: none !important;
+    color: #39a300;
+}
+
+.categories .dropdown ul button{
+    color: #00324d;
+    font-weight: 500;
+}
+
+.categories .dropdown ul button:hover{
+    outline: none !important;
+    border: none !important;
+    color: #39a300;
+}
+
+.botonesVocabulario{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.botonInsertar{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.botonInsertarText span{
+    color: #39a300;
+    font-weight: 500;
+}
+
+.botonInsertar img{
+    width: 40px;
+}
+
+.Insertar{
+    padding: 1px;
+    border-radius: 50px;
+    border: none;
+    background-color: #39a300;
+}
+
+/*Modal Añadir*/
+.modal-header h1{
+    color: #00324d;
+}
+.name{
+    color: #00324d;
+    font-weight: 500;
+}
+.image{
+    color: #00324d;
+    font-weight: 500;
+}
+.audio{
+    color:#00324d;
+    font-weight: 500;
+}
+.add{
+    background-color: #39a300 !important;
+    color: #fafafa !important;
+}
+
+/*Cards*/
+
+.cardInteractions{
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.cardInteractions:hover {
+    transform: scale(1.02);
+}
+
+.textInteractions {
+    max-width: 500px;
+    width: 100%; /* O cualquier valor adecuado para tu diseño */
+}
+
+
+.truncate {
+    display: -webkit-box;
+    -webkit-line-clamp: 2; /* Número de líneas que deseas mostrar */
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: normal; /* Asegura que el texto envuelva líneas en todos los navegadores */
+}
+
+.imgCardInteractions img {
+    width: 100%;
+    height: auto;
+    border-bottom: 1px solid #ddd;
+}
+
+.buttonPlay{
+    margin-top: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #39a300;
+    color: white;
+    border-radius: 0 0 8px 8px;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+.buttonPlay img{
+    margin-right: 5px;
+}
+
+@media (max-width: 768px) {
+    .cardInteractions {
+        margin-bottom: 15px; /* Espaciado adicional en pantallas pequeñas */
+    }
+}
+
+/*Footer*/
+
+footer{
+    background-color: #ebebeb;
+    margin-bottom: 0px;
+}
+footer .iconos{
+    text-align: center;
+}
+footer .iconos img:hover{
+    transform: translateY(-3px);
+    transition: .5s;
+}
+footer .iconos a img{
+    margin: 10px;
+}
+footer .socialSena{
+    text-align: center;
+    color: #495057;
+}
+    
+.socialSena h2{
+    font-family: 'Work Sans', sans-serif;
+    font-size: 1.5rem;
+    color: #495057;
+}
+footer a{
+    text-decoration: none;
+}
+footer .urlSena h3{
+    color: #7a7a7a;
+}
+    
+footer .urlSena {
+    text-align: center;
+    text-decoration: none;
+    font-family: 'Work Sans', sans-serif;
+}
+footer h3{
+    margin: 0px;
+    font-family: 'Work Sans', sans-serif;
+    font-size: 1rem;
+}
+.iconos{
+    margin-top: 50px;
+}

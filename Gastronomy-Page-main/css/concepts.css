@@ -1,0 +1,339 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400;500;600&display=swap');
+/*Off Canvas*/
+
+.sideBar button:focus{
+    outline: none !important;
+    border: none !important;
+}
+
+.imgButton{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+}
+
+.tarjeta{
+    font-family: 'Work Sans', sans-serif;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    border-radius: 8px;
+    padding: 10px 5px;
+    text-align: center;
+    color: #00324d;
+    box-shadow: 0 1px 10px -3px rgba(0, 0, 0, 0.2);
+}
+.imgCard{   
+    border-radius: 20px;
+    padding: 10px ;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.imgCard img{
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+/*Categorias*/
+.offcanvas-title{
+    color: #00324d;
+}
+.dropdown ul {
+    list-style: none;
+    color:#00324d
+}
+.dropdown ul li a{
+    margin-top: 10px;
+    font-weight: 500;
+}
+#selected{
+    border-right: 5px solid #39a300 ;
+}
+.categories {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.categoria {
+    display: flex;
+    gap: 5px;
+    align-items: center;
+    border-radius: 50px;
+}
+
+.imgCategoria{
+    background-color: #39a300;
+    padding: 20px;
+    border-radius: 50px;
+}
+
+.imgCategoria img {
+    width: 35px;
+}
+
+.textCategoria h2{
+    color: #00324d;
+    font-family: 'Work Sans', sans-serif;
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+.textCategoria span{
+    font-family: 'Work Sans', sans-serif;
+    color: #ced4da;
+    font-weight: bold;
+}
+
+.categories .dropdown{
+    border: solid 2px #39a300;
+    border-radius: 16px;
+}
+
+.categories .dropdown .dropi{
+    color: #39a300;
+    font-weight: 500;
+}
+
+.categories .dropdown .dropi:focus{
+    border: none !important;
+    color: #39a300;
+}
+
+.categories .dropdown .dropi:hover{
+    outline: none !important;
+    border: none !important;
+    color: #39a300;
+}
+
+.categories .dropdown ul button{
+    color: #00324d;
+    font-weight: 500;
+}
+
+.categories .dropdown ul button:hover{
+    outline: none !important;
+    border: none !important;
+    color: #39a300;
+}
+
+.botonesVocabulario{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.botonInsertar{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.botonInsertarText span{
+    color: #39a300;
+    font-weight: 500;
+}
+
+.botonInsertar img{
+    width: 40px;
+}
+
+.Insertar{
+    padding: 1px;
+    border-radius: 50px;
+    border: none;
+    background-color: #39a300;
+}
+
+/*Modal Añadir*/
+.modal-header h1{
+    color: #00324d;
+}
+.name{
+    color: #00324d;
+    font-weight: 500;
+}
+.image{
+    color: #00324d;
+    font-weight: 500;
+}
+.audio{
+    color:#00324d;
+    font-weight: 500;
+}
+.add{
+    background-color: #39a300 !important;
+    color: #fafafa !important;
+}
+
+
+/*Cards Concepts*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Work Sans', sans-serif;
+}
+section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 50vh;
+}
+.container{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 100px 50px;
+    padding: 50px 50px;
+}
+.container .cardConcept{
+    font-family: 'Work Sans', sans-serif;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    width: 350px;
+    height: 300px;
+    border-radius: 16px;
+    box-shadow: 0 1px 10px -3px rgba(0, 0, 0, 0.2);
+    transition: 0.5s;
+}
+.container .cardConcept:hover{
+    font-family: 'Work Sans', sans-serif;
+    height: 320px;
+}
+.container .cardConcept .imgCard{
+    position: absolute;
+    top: 20px;
+    width: 300px;
+    height: 220px;
+    background: #333;
+    border-radius: 8px;
+    overflow: hidden;
+    transition: 0.5s;
+}
+.container .cardConcept:hover .imgCard{
+    top: -100px;
+    scale: 0.75;
+    width: 370px;
+    height: 250px; 
+    box-shadow: 0 1px 10px -3px rgba(0, 0, 0, 0.2);
+}
+.container .cardConcept .imgCard img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.container .cardConcept .contentCard{
+    font-family: 'Work Sans', sans-serif;
+    position: absolute;
+    top: 255px;
+    width: 100%;
+    height: 30px;
+    padding: 0 30px;
+    text-align: center;
+    overflow: hidden;
+    transition: 0.5s;
+}
+.container .cardConcept:hover .contentCard{
+    top: 160px;
+    height: 260px;
+}
+.container .cardConcept .contentCard h2{
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: #39a300;
+}
+.container .cardConcept .contentCard p{
+    color: #00324d;
+}
+
+/*Footer*/
+
+footer{
+    background-color: #ebebeb;
+    margin-bottom: 0px;
+}
+footer .iconos{
+    text-align: center;
+}
+footer .iconos img:hover{
+    transform: translateY(-3px);
+    transition: .5s;
+}
+footer .iconos a img{
+    margin: 10px;
+}
+footer .socialSena{
+    text-align: center;
+    color: #495057;
+}
+    
+.socialSena h2{
+    font-family: 'Work Sans', sans-serif;
+    font-size: 1.5rem;
+    color: #495057;
+}
+footer a{
+    text-decoration: none;
+}
+footer .urlSena h3{
+    color: #7a7a7a;
+}
+    
+footer .urlSena {
+    text-align: center;
+    text-decoration: none;
+    font-family: 'Work Sans', sans-serif;
+}
+footer h3{
+    margin: 0px;
+    font-family: 'Work Sans', sans-serif;
+    font-size: 1rem;
+}
+.iconos{
+    margin-top: 50px;
+}
+    
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+    height: 100%;
+}
+
+.descriptionCard h2, .descriptionCard p {
+    word-wrap: break-word;
+}
+
+.row {
+    display: flex;
+    justify-content: center; /* Centra las tarjetas cuando hay menos de 3 */
+    flex-wrap: wrap;
+}
+
+.col-lg-4, .col-md-6, .col-sm-12 {
+    display: flex;
+    justify-content: center; /* Asegura que las tarjetas estén centradas */
+}
+
+.card h2 {
+    font-size: 1.5rem;
+}
+
+.card p {
+    font-size: 1rem;
+}

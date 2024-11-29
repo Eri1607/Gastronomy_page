@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gastronomy SENA</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+</head>
+<body>
+
+    <!--NAVBAR-->
+    <nav class="navbar navbar-expand-lg headerNav">
+        <div class="container-fluid">
+            <a class="navbar-brand ms-md-5 mt-md-3 ms-3 mt-2" href="#">
+                <img src="../img/logo_blanco.webp" alt="Logo" class="img-fluid" style="max-width: 50px;">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <img src="../img/list.svg" alt="Menu" width="30" height="30">
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto pe-3 text-center">
+                    <li class="nav-item">
+                        <a class="nav-link fw-bold text-light" href="index.html" id="idSelected">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link fw-bold text-light" href="../php/vocabulary.php">Vocabulary</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link fw-bold text-light" href="../php/concepts.php">Concepts</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link fw-bold text-light" href="../php/interactions.php">Interactions</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link fw-bold text-light" href="../php/playground.php">Playground</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!--HEADER-->
+
+    <style>
+        /* Ajuste del tamaño de la imagen en pantallas grandes */
+        @media (min-width: 992px) { /* Pantallas LG y más grandes */
+            .imgHeader img {
+                max-width: 40%; /* Ajusta este porcentaje según el tamaño deseado */
+            }
+        }
+    </style>
+    
+    <div class="container-fluid headerMain pt-5 px-5 ml-5">
+        <div class="row align-items-center">
+            <!-- Columna del texto -->
+            <div class="col-lg-6 col-md-12">
+                <div class="textHeader ps-lg-5 text-center">
+                    <h1 align="left" class="mb-3 fs-1">Gastronomy SENA</h1>
+                    <h1 align="left">Do you need to upgrade your English Level for gastronomy?</h1>
+                    <p align="left">You can learn, improve and practice your vocabulary and way of expressing yourself.</p>
+                    <p align="left">Click on "Get Started" so you can start improving your English level.</p>
+                    <div class="botonStarT mt-4 text-center">
+                        <a href="../html/login.php">Get Started</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Columna de la imagen -->
+            <div class="col-lg-6 col-md-12">
+                <div class="imgHeader text-center">
+                    <img src="../img/imgHome/platito.webp" alt="Imagen de platito" class="img-fluid">
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!--SECCION 1-->
+    <div class="container mt-5 section">
+        <div class="imgChef d-none d-lg-block">
+            <div class="colorFondo ">
+                <img src="../img/imgHome/chef2.webp" alt="">
+            </div>
+        </div>
+        <div class="contenidoSection mt-5 ms-lg-5">
+            <div class="row">
+                <h2 class="mb-4">Learning Ways</h2>
+                 <div class="items col-lg-6 col-md-6 col-sm-6 ">
+                    <div class="interactionsImg p-2">
+                        <img src="../img/imgHome/vocabulary.webp" alt="">
+                    </div>
+                    <div class="interactionsText">
+                        <a href="../php/vocabulary.php"><h3 class="mt-2">Vocabulary</h3></a>
+                        <span>You can find a wide variety of categories by which you can filter, it will show you the name, an image of the word and an audio with the pronunciation of the word.
+                        </span>
+                    </div>
+                </div> 
+                <div class="items col-lg-6 col-md-6 col-sm-6">
+                    <div class="interactionsImg p-2">
+                        <img src="../img/imgHome/concepts.webp" alt="">
+                    </div>
+                    <div class="interactionsText">
+                        <a href="../php/concepts.php"><h3 class="mt-2">Concepts</h3></a>
+                        <span>You will learn basic concepts used in the gastronomy area, you will see an image referring to the concept and a short description.
+                        </span>
+                    </div>
+                </div>
+                <div class="items col-lg-6 mt-lg-5 mt-xl-5 mt-md-5 mt-sm-5 col-md-6 col-sm-6">
+                    <div class="interactionsImg p-2">
+                        <img src="../img/imgHome/interaction.webp" alt="">
+                    </div>
+                    <div class="interactionsText">
+                        <a href="../php/interactions.php"><h3 class="mt-2">Interactions</h3></a>
+                        <span>You will learn about the different interactions that chefs have within the area of ​​gastronomy in English. You will demonstrate the basics of communication in the kitchen.
+                        </span>
+                    </div>
+                </div>
+                <div class="items col-lg-6 mt-lg-5 mt-xl-5 mt-md-5 mt-sm-5 col-md-6 col-sm-6">
+                    <div class="interactionsImg p-2">
+                        <img src="../img/imgHome/playground.webp" alt="">
+                    </div>
+                    <div class="interactionsText">
+                        <a href="../php/playground.php"><h3 class="mt-2">Playground</h3></a>
+                        <span>Strengthen your knowledge interactively with games such as word searches, crossword puzzles, among others related to the gastronomy area.
+                        </span>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+
+    <div class="hr container mt-5">
+    </div>
+
+    <!--SECCION 2-->
+    <section class="container-fluid mt-xl-5 mt-lg-5 mt-md-0 mt-sm-0 pt-5">
+        <div class="container seccion2">
+            <div class="row">
+                <div class="col">
+                    <div class="textSeccion2 mt-xl-5 mt-lg-0 mt-md-0 mt-sm-0 ms-5">
+                        <h2>Communication is very important in the kitchen</h2>
+                        <p>Learn to communicate with your colleagues so you can perform better within your work area.<p>
+                        <div class="botonStar">
+                            <a href="../html/login.php">Get Started</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col d-none d-lg-block imgCol">
+                    <div class="imagenSeccion2">
+                        <img src="../img/imgHome/equipoChef.webp" alt="Chef Team">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+        
+    <!--FOOTER-->
+    
+    <footer class="container-fluid">
+        <div class="iconos pt-2">
+            <a href="https://www.instagram.com/gastro_sena/profilecard/?igsh=MTR3YTNhZjF5ZGZ4ag=="><img src="../img/imgSocial/instagram.webp" width ="30"></a>
+            <a href="https://www.facebook.com/share/gFiKvSR1FPK39KhV/"><img src="../img/imgSocial/facebook.webp" width="30"></a>
+            <a href="https://x.com/Gastronomy30458?t=yPBNz8doWTZlS7PgTuVuCw&s=08"><img src="../img/imgSocial/twitter.webp" width="30"></a>
+            <a href="https://www.youtube.com/@Gastronomy-o7c"><img src="../img/imgSocial/youtube.webp" width="30"></a>
+            <a href=""><img src="../img/imgSocial/linkedin.webp" width="30"></a>
+        </div>
+        <div class="socialSena ">
+            <a href=""> <h2>@SENAComunica</h2> </a>
+        </div>
+        <div class="urlSena pb-2">
+            <a href="https://www.sena.edu.co/es-co/Paginas/default.aspx" target="_blank"> <h3>www.sena.edu.co</h3> </a>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+</body>
+</html>
